@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: postgres_apip2
+    restart: always
+    ports:
+      # Mapeia a porta 5433 do seu PC para a 5432 do container
+      # (Isso alinha com o seu arquivo .env atual)
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: apip2_db
+    volumes:
+      # Cria um volume para os dados não sumirem quando desligar o container
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

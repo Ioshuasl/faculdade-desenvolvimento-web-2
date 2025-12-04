@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2020",                       /* Versão do JS gerado */
+    "module": "commonjs",                     /* Padrão de módulos do Node */
+    "lib": ["es6"],                           /* Bibliotecas padrão */
+    "allowJs": true,                          /* Permite arquivos JS se necessário */
+    "outDir": "./dist",                       /* Pasta onde ficará o código compilado */
+    "rootDir": "./src",                       /* Pasta onde está seu código fonte */
+    "removeComments": true,                   /* Remove comentários no build final */
+    "strict": true,                           /* Ativa verificação rigorosa de tipos */
+    "noImplicitAny": true,                    /* Proíbe variáveis sem tipo definido */
+    "esModuleInterop": true,                  /* Permite importar módulos CommonJS como ES6 */
+    "resolveJsonModule": true,                /* Permite importar arquivos .json */
+    "skipLibCheck": true,                     /* Pula checagem de tipos em libs de terceiros */
+    "forceConsistentCasingInFileNames": true  /* Diferencia maiúsculas/minúsculas */
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
